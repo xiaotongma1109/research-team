@@ -60,9 +60,11 @@ export default function NewPostPage() {
 
     // 更新标签使用计数
     for (const tag of tags) {
-      await supabase.rpc('increment_tag_usage', { tag_name: tag }).catch(() => {
-        // 如果标签不存在，插入新标签
-        supabase.from('tags').upsert({ name: tag, category: 'skill', usage_count: 1 }).catch(() => {})
+      try {
+  await supabase.rpc('increment_tag_usage', { tag_name: tag })
+} catch {
+  await supabase.from('tags').upsert({ name: tag, category: 'skill', usage_count: 1 })
+}
       })
     }
 
