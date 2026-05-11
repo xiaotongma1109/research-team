@@ -65,7 +65,6 @@ export default function NewPostPage() {
 } catch {
   await supabase.from('tags').upsert({ name: tag, category: 'skill', usage_count: 1 })
 }
-      })
     }
 
     router.push(`/post/${data.id}`)
