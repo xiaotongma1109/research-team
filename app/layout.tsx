@@ -3,7 +3,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata: Metadata = {
-  title: '研队 - 校内科研组队平台',
+  title: '研小队 - 校内科研组队平台',
   description: '找到志同道合的科研伙伴，高效组队，一起做有意思的研究',
 }
 
