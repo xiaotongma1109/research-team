@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary-600">研队</span>
+          <span className="text-xl font-bold text-primary-600">研小队</span>
           <span className="text-xs text-gray-400 hidden sm:inline">科研组队平台</span>
         </Link>
 
