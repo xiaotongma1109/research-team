@@ -65,7 +65,7 @@ export default function AuthPage() {
     <div className="min-h-[80vh] flex items-center justify-center">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">{mode === 'login' ? '欢迎回来' : '加入研队'}</h1>
+          <h1 className="text-3xl font-bold text-gray-900">{mode === 'login' ? '欢迎回来' : '加入研小队'}</h1>
           <p className="mt-2 text-gray-500">{mode === 'login' ? '登录你的账号，继续探索科研组队' : '注册账号，开始寻找科研伙伴'}</p>
         </div>
         <form onSubmit={mode === 'login' ? handleLogin : handleRegister} className="card space-y-4">
